@@ -40,7 +40,7 @@
 
   <footer>
     <hr />
-    <p style="text-align: center;">Created with 🍦 by <span class="signature">Mr. Coder</span></p>
+    <p style="text-align: center;">Created with 🍦 by <span class="signature">Quinn</span></p>
   </footer>
 </body>
 </html>
