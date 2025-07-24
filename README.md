@@ -1,150 +1,57 @@
-/* 🎯 Apply border-box to all elements */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+<body>
+  <header class="main-header">
+    <h1>🌅 Welcome to Our Recipe Hub</h1>
+  </header>
 
-/* 🌅 Page background and font */
-body {
-  font-family: "Pacifico", cursive, "Georgia", serif;
-  color: #5e4b32;
-  padding: 1rem;
-  background: linear-gradient(to bottom right, #f9ecd0, #fceabb);
-  background-attachment: fixed;
-}
+  <section class="row second-row">
+    <div class="column links">
+      <h2>🔗 Useful Links</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Tips</a></li>
+      </ul>
+    </div>
+    <div class="column content">
+      <h2>🍝 Featured Recipe</h2>
+      <img src="https://via.placeholder.com/300x200.png?text=Delicious+Dish" alt="Dish image">
+      <p>A delightful dish made with fresh ingredients and a sprinkle of love.</p>
+    </div>
+    <div class="column rating">
+      <h2>⭐ Rating</h2>
+      <p>🌟🌟🌟🌟☆</p>
+      <button>Convert Measurements</button>
+    </div>
+  </section>
 
-/* 🔖 Generic span stylers */
-span.tagline {
-  font-style: italic;
-  font-size: 1.2rem;
-  color: #805234;
-}
+  <section class="row third-row">
+    <div class="column ingredients">
+      <h2>🥕 Ingredients</h2>
+      <ul>
+        <li>1 cup flour</li>
+        <li>2 eggs</li>
+        <li>½ cup milk</li>
+      </ul>
+    </div>
+    <div class="column equipment">
+      <h2>🧰 Equipment</h2>
+      <ul>
+        <li>Mixing bowl</li>
+        <li>Whisk</li>
+        <li>Pan</li>
+      </ul>
+    </div>
+    <div class="column directions">
+      <h2>📋 Directions</h2>
+      <ol>
+        <li>Mix ingredients.</li>
+        <li>Heat pan.</li>
+        <li>Cook and serve.</li>
+      </ol>
+    </div>
+  </section>
 
-span.highlight {
-  font-weight: bold;
-  color: #b2541c;
-  background-color: #ffe8cc;
-  padding: 0.1rem 0.4rem;
-  border-radius: 6px;
-}
-
-span.signature {
-  font-style: italic;
-  font-weight: 500;
-  color: #6b4c2f;
-}
-
-/* 🌟 Targeted div styling */
-div#hero-banner {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-div.wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-div.box1, div.box2, div.box3, div.box4 {
-  padding: 1rem;
-  background: linear-gradient(to bottom, #fff3e0, #ffe0b2);
-  border: 2px solid #d2691e;
-  border-radius: 16px;
-  text-align: center;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-}
-
-div.box1:hover,
-div.box2:hover,
-div.box3:hover,
-div.box4:hover {
-  background-color: #ffcc99;
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-/* 🌸 Main headings */
-h1 {
-  font-size: 2.8rem;
-  color: #a0522d;
-  text-shadow: 1px 1px #e7d2a7;
-  margin-bottom: 0.75rem;
-}
-
-h2 {
-  font-size: 2rem;
-  color: #8b5e3c;
-  text-align: center;
-}
-
-/* 📝 Paragraph formatting */
-p {
-  font-style: italic;
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-/* 🖼️ Image styling */
-img {
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
-  max-width: 100%;
-  height: auto;
-}
-
-/* 📦 Fieldset styles */
-fieldset {
-  border: 2px solid #a0522d;
-  margin: 1.5rem 0;
-  padding: 1rem;
-  background-color: rgba(249, 236, 208, 0.85);
-  border-radius: 12px;
-}
-
-/* 🏷️ Legend */
-legend {
-  font-weight: bold;
-  font-size: 1.4rem;
-  color: #a0522d;
-}
-
-/* ✅ List styling */
-ul, ol {
-  margin-left: 2rem;
-  text-align: left;
-}
-
-/* 🧾 Footer note */
-hr {
-  margin-top: 2rem;
-  border: none;
-  border-top: 2px dotted #8b5e3c;
-}
-
-p[style] {
-  font-size: 0.95rem;
-  color: #6b4c2f;
-}
-
-/* 📱 Responsive tweaks */
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  div.wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  img {
-    border-radius: 12px;
-  }
-}
+  <footer class="main-footer">
+    <p>© 2025 Recipe Hub. Crafted with 🍂 by Mr.</p>
+  </footer>
+</body>
