@@ -3,45 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Classic Web Page</title>
+  <title>Classic Layout</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div id="hero-banner">
-    <h1>🍨 Welcome to My Classic Site</h1>
-    <p class="tagline">Built with vanilla code & lots of flavor</p>
+    <h1>🍨 Mr.'s Web Corner</h1>
+    <p class="tagline">Sweet, nostalgic, and refreshingly simple</p>
   </div>
 
   <div class="wrapper">
-    <!-- Sidebar -->
+    <!-- Sidebar navigation -->
     <div class="box1">
-      <h2>Navigation</h2>
+      <h2>Menu</h2>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Recipes</a></li>
-        <li><a href="#">Tips</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><span class="highlight">Home</span></li>
+        <li><span class="highlight">Gallery</span></li>
+        <li><span class="highlight">Projects</span></li>
+        <li><span class="highlight">Contact</span></li>
       </ul>
     </div>
 
-    <!-- Main Content -->
+    <!-- Main content area -->
     <div class="box2">
-      <h2>Featured Recipe</h2>
-      <img src="dessert.jpg" alt="Dreamy Dessert" />
-      <p>A delightful treat with <span class="highlight">heavy cream</span>, <span class="highlight">vanilla</span>, and a touch of magic.</p>
-      <p><span class="highlight">Pro tip:</span> Freeze before serving for best texture!</p>
+      <h2>Latest Recipe</h2>
+      <img src="dessert.jpg" alt="Dessert Delight" />
+      <p>A classic creamy dish with <span class="highlight">vanilla</span>, <span class="highlight">sugar</span>, and lots of love.</p>
     </div>
 
-    <!-- Extra Info -->
+    <!-- Optional third section -->
     <div class="box3">
-      <h2>About This Page</h2>
-      <p>This layout is inspired by classic GitHub Pages—simple, readable, and homemade.</p>
+      <h2>About</h2>
+      <p>This page layout embraces the classic web aesthetic—simple grids, gentle colors, and handcrafted vibes.</p>
     </div>
   </div>
 
   <footer>
     <hr />
-    <p style="text-align:center">Created with 🍦 by <span class="signature">Mr. Coder</span></p>
+    <p style="text-align: center;">Created with 🍦 by <span class="signature">Mr. Coder</span></p>
   </footer>
 </body>
 </html>
