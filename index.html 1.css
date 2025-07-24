@@ -1,94 +1,116 @@
-/* Page background and font */
+/* 🌅 Page background and font */
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, sans-serif;
-  color: #3a3a3a;
+  font-family: "Pacifico", cursive, "Georgia", serif;
+  color: #5e4b32;
   padding: 1rem;
-  background-image: url('images/ice-cream-background.jpg');
-  background-size: cover;
+  background: linear-gradient(to bottom right, #f9ecd0, #fceabb);
+  background-attachment: fixed;
 }
 
-/* Main headings */
+/* 🌸 Main headings */
 h1 {
-  font-size: 2.5rem;
-  color: #d94d66;
+  font-size: 2.8rem;
+  color: #a0522d;
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  text-shadow: 1px 1px #e7d2a7;
 }
 
 h2 {
-  font-size: 1.8rem;
-  color: #7a3e87;
+  font-size: 2rem;
+  color: #8b5e3c;
   text-align: center;
 }
 
-/* Paragraph formatting */
+/* 📝 Paragraph formatting */
 p {
   font-style: italic;
   text-align: center;
+  font-size: 1.1rem;
 }
 
-/* Image styling */
+/* 🖼️ Image styling */
 img {
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  max-width: 100%;
+  height: auto;
 }
 
-/* Fieldset styles */
+/* 📦 Fieldset styles */
 fieldset {
-  border: 2px solid #d94d66;
+  border: 2px solid #a0522d;
   margin: 1.5rem 0;
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(249, 236, 208, 0.85);
+  border-radius: 12px;
 }
 
+/* 🏷️ Legend */
 legend {
   font-weight: bold;
-  font-size: 1.2rem;
-  color: #d94d66;
+  font-size: 1.4rem;
+  color: #a0522d;
 }
 
-/* List styling */
+/* ✅ List styling */
 ul, ol {
-  margin-left: 1.5rem;
+  margin-left: 2rem;
 }
 
-/* Footer note */
+/* 🧾 Footer note */
 hr {
   margin-top: 2rem;
   border: none;
-  border-top: 2px dashed #ccc;
+  border-top: 2px dotted #8b5e3c;
 }
 
 p[style] {
-  font-size: 0.9rem;
-  color: #555;
+  font-size: 0.95rem;
+  color: #6b4c2f;
 }
 
-/* Layout for box sections */
+/* 🎨 Layout for box sections */
 .wrapper {
-  display: flex;
-  justify-content: space-around;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
   margin: 2rem 0;
-  flex-wrap: wrap;
 }
 
+/* 📦 Individual boxes */
 .box1, .box2, .box3, .box4 {
-  flex: 1 1 45%;
   padding: 1rem;
-  background-color: #fff8f9;
-  border: 2px dashed #d94d66;
-  border-radius: 8px;
+  background: linear-gradient(to bottom, #fff3e0, #ffe0b2);
+  border: 2px solid #d2691e;
+  border-radius: 16px;
   text-align: center;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
 
-/* Optional hover effect */
+/* 🎯 Hover effect */
 .box1:hover, .box2:hover, .box3:hover, .box4:hover {
-  background-color: #ffe4ec;
-  transform: scale(1.02);
-  transition: 0.3s ease;
+  background-color: #ffcc99;
+  transform: scale(1.05);
   cursor: pointer;
 }
 
+/* 📱 Responsive tweaks */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
 
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    border-radius: 12px;
+  }
+}
