@@ -1,119 +1,118 @@
-<body>
-  <div class="page-grid">
-    <header class="main-header">
-      <h1>🌅 Welcome to Our Recipe Hub</h1>
-    </header>
-
-    <section class="content-row second-row">
-      <div class="column links">
-        <h2>🔗 Links</h2>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Recipes</a></li>
-          <li><a href="#">Tips</a></li>
-        </ul>
-      </div>
-      <div class="column content">
-        <h2>🍝 Featured Recipe</h2>
-        <img src="https://via.placeholder.com/300x200.png?text=Dish" alt="Dish image">
-        <p>A delightful dish made with fresh ingredients and love.</p>
-      </div>
-      <div class="column rating">
-        <h2>⭐ Ratings</h2>
-        <p>🌟🌟🌟🌟☆</p>
-        <button>Convert Units</button>
-      </div>
-    </section>
-
-    <section class="content-row third-row">
-      <div class="column ingredients">
-        <h2>🥕 Ingredients</h2>
-        <ul>
-          <li>1 cup flour</li>
-          <li>2 eggs</li>
-          <li>½ cup milk</li>
-        </ul>
-      </div>
-      <div class="column equipment">
-        <h2>🧰 Equipment</h2>
-        <ul>
-          <li>Mixing bowl</li>
-          <li>Whisk</li>
-          <li>Pan</li>
-        </ul>
-      </div>
-      <div class="column directions">
-        <h2>📋 Directions</h2>
-        <ol>
-          <li>Mix ingredients.</li>
-          <li>Heat pan.</li>
-          <li>Cook and serve.</li>
-        </ol>
-      </div>
-    </section>
-
-    <footer class="main-footer">
-      <p>© 2025 Recipe Hub. Crafted with 🍂 by Mr.</p>
-    </footer>
-  </div>
-  /* 🧱 Page-wide grid container */
-.page-grid {
-  display: grid;
-  grid-template-rows: auto 1fr 1fr auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
+/* 🔧 Universal box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* 🧭 Header and Footer spanning full width */
-.main-header, .main-footer {
-  grid-column: 1 / -1;
-  text-align: center;
+/* 🌅 Body and Font Styling */
+body {
+  font-family: "Pacifico", cursive, "Georgia", serif;
+  background: linear-gradient(to bottom right, #f9ecd0, #fceabb);
+  color: #5e4b32;
+  padding: 1rem;
+}
+
+/* 🎯 Header and Footer Styling */
+.main-header,
+.main-footer {
   background-color: #ffe0b2;
   padding: 1.5rem;
+  text-align: center;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
-/* 🧩 Each content row uses grid layout */
-.content-row {
-  display: contents; /* allow child columns to fill the parent grid */
+.main-header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  color: #a0522d;
+  text-shadow: 1px 1px #e7d2a7;
 }
 
-/* 💡 Columns inside each row */
+.main-footer p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #6b4c2f;
+}
+
+/* 🧱 Row Structure using Flexbox */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* 🧩 Column Styling */
 .column {
-  background: linear-gradient(to bottom, #fff3e0, #ffe0b2);
+  flex: 1 1 30%;
+  padding: 1rem;
+  background-color: #fff3e0;
   border: 2px solid #d2691e;
   border-radius: 16px;
-  padding: 1rem;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
   text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* 🎯 Links styling */
-.links a {
+/* 🌐 Responsive Images */
+.column img {
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  max-width: 100%;
+  height: auto;
+}
+
+/* 🔗 Link Styling */
+a {
   text-decoration: none;
   color: #b2541c;
   font-weight: bold;
 }
 
-.links a:hover {
+a:hover {
   color: #6b4c2f;
 }
 
-/* 📱 Mobile-friendly layout */
-@media screen and (max-width: 768px) {
-  .page-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
-  }
-
-  .main-header, .main-footer {
-    grid-column: 1;
-  }
-
-  .column {
-    margin-bottom: 1rem;
-  }
+/* 🧾 Lists */
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  text-align: left;
 }
 
-</body>
+ul li, ol li {
+  margin-bottom: 0.5rem;
+}
+
+/* 🎛️ Buttons */
+button {
+  background-color: #b2541c;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a0522d;
+}
+
+/* 📱 Responsive Tweaks */
+@media screen and (max-width: 768px) {
+  .column {
+    flex: 1 1 100%;
+  }
+
+  .main-header h1 {
+    font-size: 2rem;
+  }
+
+  .main-footer p {
+    font-size: 0.85rem;
+  }
+}
