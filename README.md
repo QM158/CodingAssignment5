@@ -52,7 +52,7 @@
   </section>
 
   <footer class="main-footer">
-    <p>© 2025 Recipe Hub. Crafted with 🍂 by Mr.</p>
+    <p>© 2025 Recipe Hub. Crafted with 🍂 by Quinn.</p>
   </footer>
 </body>
 
