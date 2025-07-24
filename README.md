@@ -56,4 +56,64 @@
       <p>© 2025 Recipe Hub. Crafted with 🍂 by Mr.</p>
     </footer>
   </div>
+  /* 🧱 Page-wide grid container */
+.page-grid {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+/* 🧭 Header and Footer spanning full width */
+.main-header, .main-footer {
+  grid-column: 1 / -1;
+  text-align: center;
+  background-color: #ffe0b2;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 🧩 Each content row uses grid layout */
+.content-row {
+  display: contents; /* allow child columns to fill the parent grid */
+}
+
+/* 💡 Columns inside each row */
+.column {
+  background: linear-gradient(to bottom, #fff3e0, #ffe0b2);
+  border: 2px solid #d2691e;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* 🎯 Links styling */
+.links a {
+  text-decoration: none;
+  color: #b2541c;
+  font-weight: bold;
+}
+
+.links a:hover {
+  color: #6b4c2f;
+}
+
+/* 📱 Mobile-friendly layout */
+@media screen and (max-width: 768px) {
+  .page-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+
+  .main-header, .main-footer {
+    grid-column: 1;
+  }
+
+  .column {
+    margin-bottom: 1rem;
+  }
+}
+
 </body>
