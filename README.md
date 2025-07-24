@@ -1,145 +1,46 @@
-/* 🌅 Page background and font */
-body {
-  font-family: "Pacifico", cursive, "Georgia", serif;
-  color: #5e4b32;
-  padding: 1rem;
-  background: linear-gradient(to bottom right, #f9ecd0, #fceabb);
-  background-attachment: fixed;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classic Layout</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="hero-banner">
+    <h1>🍨 Mr.'s Web Corner</h1>
+    <p class="tagline">Sweet, nostalgic, and refreshingly simple</p>
+  </div>
 
-/* 🔖 Generic span stylers */
-span.tagline {
-  font-style: italic;
-  font-size: 1.2rem;
-  color: #805234;
-}
+  <div class="wrapper">
+    <!-- Sidebar navigation -->
+    <div class="box1">
+      <h2>Menu</h2>
+      <ul>
+        <li><span class="highlight">Home</span></li>
+        <li><span class="highlight">Gallery</span></li>
+        <li><span class="highlight">Projects</span></li>
+        <li><span class="highlight">Contact</span></li>
+      </ul>
+    </div>
 
-span.highlight {
-  font-weight: bold;
-  color: #b2541c;
-  background-color: #ffe8cc;
-  padding: 0.1rem 0.4rem;
-  border-radius: 6px;
-}
+    <!-- Main content area -->
+    <div class="box2">
+      <h2>Latest Recipe</h2>
+      <img src="dessert.jpg" alt="Dessert Delight" />
+      <p>A classic creamy dish with <span class="highlight">vanilla</span>, <span class="highlight">sugar</span>, and lots of love.</p>
+    </div>
 
-span.signature {
-  font-style: italic;
-  font-weight: 500;
-  color: #6b4c2f;
-}
+    <!-- Optional third section -->
+    <div class="box3">
+      <h2>About</h2>
+      <p>This page layout embraces the classic web aesthetic—simple grids, gentle colors, and handcrafted vibes.</p>
+    </div>
+  </div>
 
-/* 🌟 Targeted div styling */
-div#hero-banner {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-div.wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-div.box1, div.box2, div.box3, div.box4 {
-  padding: 1rem;
-  background: linear-gradient(to bottom, #fff3e0, #ffe0b2);
-  border: 2px solid #d2691e;
-  border-radius: 16px;
-  text-align: center;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-}
-
-div.box1:hover,
-div.box2:hover,
-div.box3:hover,
-div.box4:hover {
-  background-color: #ffcc99;
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-/* 🌸 Main headings */
-h1 {
-  font-size: 2.8rem;
-  color: #a0522d;
-  text-shadow: 1px 1px #e7d2a7;
-  margin-bottom: 0.75rem;
-}
-
-h2 {
-  font-size: 2rem;
-  color: #8b5e3c;
-  text-align: center;
-}
-
-/* 📝 Paragraph formatting */
-p {
-  font-style: italic;
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-/* 🖼️ Image styling */
-img {
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
-  max-width: 100%;
-  height: auto;
-}
-
-/* 📦 Fieldset styles */
-fieldset {
-  border: 2px solid #a0522d;
-  margin: 1.5rem 0;
-  padding: 1rem;
-  background-color: rgba(249, 236, 208, 0.85);
-  border-radius: 12px;
-}
-
-/* 🏷️ Legend */
-legend {
-  font-weight: bold;
-  font-size: 1.4rem;
-  color: #a0522d;
-}
-
-/* ✅ List styling */
-ul, ol {
-  margin-left: 2rem;
-  text-align: left;
-}
-
-/* 🧾 Footer note */
-hr {
-  margin-top: 2rem;
-  border: none;
-  border-top: 2px dotted #8b5e3c;
-}
-
-p[style] {
-  font-size: 0.95rem;
-  color: #6b4c2f;
-}
-
-/* 📱 Responsive tweaks */
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  div.wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  img {
-    border-radius: 12px;
-  }
-}
-
-
+  <footer>
+    <hr />
+    <p style="text-align: center;">Created with 🍦 by <span class="signature">Quinn</span></p>
+  </footer>
+</body>
+</html>
