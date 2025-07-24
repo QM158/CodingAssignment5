@@ -7,13 +7,65 @@ body {
   background-attachment: fixed;
 }
 
+/* 🔖 Generic span stylers */
+span.tagline {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #805234;
+}
+
+span.highlight {
+  font-weight: bold;
+  color: #b2541c;
+  background-color: #ffe8cc;
+  padding: 0.1rem 0.4rem;
+  border-radius: 6px;
+}
+
+span.signature {
+  font-style: italic;
+  font-weight: 500;
+  color: #6b4c2f;
+}
+
+/* 🌟 Targeted div styling */
+div#hero-banner {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+div.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+div.box1, div.box2, div.box3, div.box4 {
+  padding: 1rem;
+  background: linear-gradient(to bottom, #fff3e0, #ffe0b2);
+  border: 2px solid #d2691e;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+div.box1:hover,
+div.box2:hover,
+div.box3:hover,
+div.box4:hover {
+  background-color: #ffcc99;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 /* 🌸 Main headings */
 h1 {
   font-size: 2.8rem;
   color: #a0522d;
-  text-align: center;
-  margin-bottom: 0.75rem;
   text-shadow: 1px 1px #e7d2a7;
+  margin-bottom: 0.75rem;
 }
 
 h2 {
@@ -56,6 +108,7 @@ legend {
 /* ✅ List styling */
 ul, ol {
   margin-left: 2rem;
+  text-align: left;
 }
 
 /* 🧾 Footer note */
@@ -70,32 +123,6 @@ p[style] {
   color: #6b4c2f;
 }
 
-/* 🎨 Layout for box sections */
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-/* 📦 Individual boxes */
-.box1, .box2, .box3, .box4 {
-  padding: 1rem;
-  background: linear-gradient(to bottom, #fff3e0, #ffe0b2);
-  border: 2px solid #d2691e;
-  border-radius: 16px;
-  text-align: center;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-}
-
-/* 🎯 Hover effect */
-.box1:hover, .box2:hover, .box3:hover, .box4:hover {
-  background-color: #ffcc99;
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
 /* 📱 Responsive tweaks */
 @media screen and (max-width: 768px) {
   h1 {
@@ -106,7 +133,7 @@ p[style] {
     font-size: 1.6rem;
   }
 
-  .wrapper {
+  div.wrapper {
     grid-template-columns: 1fr;
   }
 
@@ -114,3 +141,5 @@ p[style] {
     border-radius: 12px;
   }
 }
+
+
