@@ -1,3 +1,10 @@
+/* 🎯 Apply border-box to all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* 🌅 Page background and font */
 body {
   font-family: "Pacifico", cursive, "Georgia", serif;
@@ -141,6 +148,3 @@ p[style] {
     border-radius: 12px;
   }
 }
-
-
-
