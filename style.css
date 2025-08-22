@@ -1,115 +1,98 @@
-!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Recipe Hub</title>
-  <style>
-    /* Reset and base styles */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+  }
 
-    body {
-      font-family: 'Georgia', serif;
-      background-color: #fdf6f0;
-      color: #333;
-      line-height: 1.6;
-    }
+  .col {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 5px;
+  }
 
-    header, footer {
-      background-color: #ffe4c4;
-      text-align: center;
-      padding: 1.5rem;
-      border-bottom: 2px solid #d2b48c;
-    }
+  .row1>.col:nth-child(1) {
+    max-width: 10%;
+  }
 
-    header h1 {
-      font-size: 2rem;
-    }
+  .row1>.col:nth-child(2) {
+    max-width: 20%;
+  }
 
-    footer {
-      font-size: 0.9rem;
-      border-top: 2px solid #d2b48c;
-    }
+  .row1>.col:nth-child(3) {
+    max-width: 70%;
+  }
 
-    .main-nav {
-      background-color: #f5deb3;
-      padding: 0.5rem 1rem;
-      border-bottom: 1px solid #ccc;
-    }
+  .row2>.col:nth-child(1) {
+    max-width: 20%;
+  }
 
-    .main-nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      gap: 2rem;
-    }
+  .row2>.col:nth-child(2) {
+    max-width: 15%;
+  }
 
-    .main-nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
+  .row2>.col:nth-child(3) {
+    max-width: 65%;
+  }
 
-    .hero-banner img {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin-bottom: 1rem;
-    }
+  img {
+    width: 100%;
+    border-radius: 4px;
+  }
 
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 1rem;
-      gap: 1rem;
-    }
+  .disclaimer {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+  }
 
-    .column {
-      flex: 1;
-      min-width: 250px;
-      background-color: #fff8dc;
-      padding: 1rem;
-      border: 1px solid #e0c097;
-      border-radius: 5px;
-    }
+  .disclaimer span {
+    vertical-align: middle;
+  }
 
-    .column h2 {
-      margin-bottom: 0.5rem;
-      font-size: 1.2rem;
-    }
+  .bottomnavigation {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+  }
 
-    .column ul, .column ol {
-      margin-left: 1.2rem;
-    }
+  .bottomnavigation a {
+    vertical-align: middle;
+  }
 
-    button {
-      margin-top: 0.5rem;
-      padding: 0.5rem 1rem;
-      background-color: #d2691e;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
+  .radio-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: pink;
+    padding: 1em;
+  }
 
-    button:hover {
-      background-color: #a0522d;
-    }
+  body {
+    background-image: repeating-linear-gradient(45deg,
+        /* horizontal stripes */
+        white 0px,
+        white 10px,
+        rgba(255, 182, 193, 0.2) 10px,
+        rgba(255, 182, 193, 0.2) 20px);
+  }
 
-    @media (max-width: 768px) {
-      .row {
-        flex-direction: column;
-      }
+  .heading {
+    background-color: pink;
+  }
 
-      .main-nav ul {
-        flex-direction: column;
-        gap: 1rem;
-      }
- }
-  </style>
-</head>
-<body>
+  .links ul {
+    list-style-type: none;
+  }
+
+  .links ul > li > a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: pink;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
