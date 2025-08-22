@@ -1,94 +1,111 @@
-/* Page background and font */
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, sans-serif;
-  color: #3a3a3a;
-  padding: 1rem;
-  background-image: url('images/ice-cream-background.jpg');
-  background-size: cover;
-}
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe Hub</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-/* Main headings */
-h1 {
-  font-size: 2.5rem;
-  color: #d94d66;
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fdf6f0;
+      color: #333;
+      line-height: 1.6;
+    }
 
-h2 {
-  font-size: 1.8rem;
-  color: #7a3e87;
-  text-align: center;
-}
+    header, footer {
+      background-color: #ffe4c4;
+      text-align: center;
+      padding: 1.5rem;
+      border-bottom: 2px solid #d2b48c;
+    }
 
-/* Paragraph formatting */
-p {
-  font-style: italic;
-  text-align: center;
-}
+    header h1 {
+      font-size: 2rem;
+    }
 
-/* Image styling */
-img {
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
+    footer {
+      font-size: 0.9rem;
+      border-top: 2px solid #d2b48c;
+    }
 
-/* Fieldset styles */
-fieldset {
-  border: 2px solid #d94d66;
-  margin: 1.5rem 0;
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.8);
-}
+    .main-nav {
+      background-color: #f5deb3;
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid #ccc;
+    }
 
-legend {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #d94d66;
-}
+    .main-nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 2rem;
+    }
 
-/* List styling */
-ul, ol {
-  margin-left: 1.5rem;
-}
+    .main-nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
 
-/* Footer note */
-hr {
-  margin-top: 2rem;
-  border: none;
-  border-top: 2px dashed #ccc;
-}
+    .hero-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 1rem;
+    }
 
-p[style] {
-  font-size: 0.9rem;
-  color: #555;
-}
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+      gap: 1rem;
+    }
 
-/* Layout for box sections */
-.wrapper {
-  display: flex;
-  justify-content: space-around;
-  gap: 1rem;
-  margin: 2rem 0;
-  flex-wrap: wrap;
-}
+    .column {
+      flex: 1;
+      min-width: 250px;
+      background-color: #fff8dc;
+      padding: 1rem;
+      border: 1px solid #e0c097;
+      border-radius: 5px;
+    }
 
-.box1, .box2, .box3, .box4 {
-  flex: 1 1 45%;
-  padding: 1rem;
-  background-color: #fff8f9;
-  border: 2px dashed #d94d66;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
+    .column h2 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
 
-/* Optional hover effect */
-.box1:hover, .box2:hover, .box3:hover, .box4:hover {
-  background-color: #ffe4ec;
-  transform: scale(1.02);
-  transition: 0.3s ease;
-  cursor: pointer;
-}
+    .column ul, .column ol {
+      margin-left: 1.2rem;
+    }
 
+    button {
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #d2691e;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
 
+    button:hover {
+      background-color: #a0522d;
+    }
+
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+      }
+
+      .main-nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
